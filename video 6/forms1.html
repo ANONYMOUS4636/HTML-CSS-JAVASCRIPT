@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS IN HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Forms In HTML</h1>
+    <form action="/submit">
+        <div>
+            <label for="name">Enter Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+        </div>
+        <div>
+            <label for="username">Enter Your Username</label>
+            <input type="username" id="username" name="username" placeholder="Enter Your Username" required>
+        </div>
+        <div>
+            <label for="password">Enter Your Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="ph">Enter Your Phone no.</label>
+            <input type="tel" id="ph" name="phone" required>
+        </div>
+        <div>
+            <label for="email">Enter Your Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="dob">Enter Your D.O.B</label>
+            <input type="date" id="dob" name="email" required>
+        </div>
+        <div>
+            <select name="gender" id="gender" name="gender" required>
+                <option value="" disabled selected>Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p>Subscription Plan</p>
+            <input type="radio" id="basic" value="basic">
+            <label for="basic">Basic</label>
+
+            <input type="radio" id="super plus" value=super plus">
+            <label for="super plus">Super plus</label>
+
+            <input type="radio" id="Advance plus" value="Advance plus">
+            <label for="Advance plus">Advance plus</label>
+        </div>
+        <div>
+            <input type="checkbox" id="terms" name="t&c" required>
+            <label for="terms">Accept Terms And Conditions</label>
+        </div>
+        <div>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" placeholder="enter your comment here ..." rows="5" cols="40" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
