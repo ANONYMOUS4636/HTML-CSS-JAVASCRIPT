@@ -1,3 +1,9 @@
 /* div{
     background-color: aquamarine;
 } */
+.abc:invalid {
+  border-color: red;
+}
+.abc:valid{
+  border-color: green;
+}
