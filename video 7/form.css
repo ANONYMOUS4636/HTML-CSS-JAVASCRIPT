@@ -1,0 +1,36 @@
+
+form{
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: auto;
+    width: 60vw;
+    padding: 20px;
+    background-color: lightgray;
+    font-family: "Poppins", sans-serif;
+    min-height: 90vh;
+
+}
+h1{
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    width: 60vw;
+    background-color: aquamarine;
+
+}
+.hower{
+    margin: auto;
+    width : 30vw;
+}
+.hower:hover{
+    background-color: lightblue;
+    color: black;
+}
+form div{
+    padding: 10px;
+    margin: auto;
+}
+html{
+    background-color: antiquewhite;
+}
