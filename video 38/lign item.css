@@ -1,0 +1,7 @@
+.flex-container {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    background-color: yellowgreen;
+    align-items: center;
+}
