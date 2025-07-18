@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    cursor: pointer;
+}
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container2, .container3{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+ul{
+    list-style: none;
+}
+
+.container3 .Buy{
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 12px;
+}
+.container3 .search{
+    width: 69px;
+    font-size: 17px;
+    font-weight: 200;
+    padding: 7px;
+    border-radius: 50px;
+}
+.container3 .eng{
+    font-size: 21px;
+}
+.middle h1{
+    text-align: center;
+    padding-top: 62px;
+    padding-bottom: 42px;
+}
+
+.middle p{
+    font-weight: bold;
+    width: 500px;
+    margin: 0px auto;
+}
+.download-button{
+text-align: center;
+margin: 25px 0px;
+}
+
+.download-button button{
+border: none;
+background-color: rgb(27, 201, 201);
+color: white;
+height: 24px;
+
+}

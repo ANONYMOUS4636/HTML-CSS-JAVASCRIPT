@@ -2,5 +2,6 @@
     display: flex;
     flex-direction: row;
     background-color: yellowgreen;
-    flex-wrap: wrap;
+    /* flex-wrap: column; */
+    flex-flow: row wrap-reverse;
 }

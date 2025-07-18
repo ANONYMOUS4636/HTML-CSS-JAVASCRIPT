@@ -1,0 +1,31 @@
+ <header>
+        <nav class="nav">
+            <div class="list">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>contact Us</li>
+                    <li>Account</li>
+                    
+                </ul>
+            </div>
+            <div class="account">
+                <img  src="PHOTO.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="box1">
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+            <div class="welcome">
+            <p>Welcome To This SIGMA Web Development Express</p>
+        </div>
+        <div>
+            <img class="logo" src="logo.jpg" alt="">
+        </div>
+    </main>
+    <footer class="footer">
+        <div>all copyrights&copy; reserved</div>
+    </footer>
