@@ -38,33 +38,4 @@ ul{
 .container3 .eng{
     font-size: 21px;
 }
-main{
-        width: 60vw;
-    margin: 0px auto;
-}
-
-.middle{
-    text-align: center;
-    margin: 40px 0px;
-    width: 100%;
-}
-
-.download-button button{
-    border: none;
-    background-color: rgb(6 212 211);;
-    color: white;
-    height: 45px;
-    width: 267px;
-}
-.container .item{
-    text-align: center;
-    height: 150px;
-    background-color: #f7f7f7;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 25px;
-    column-gap: 12px;
-}
+.logo
