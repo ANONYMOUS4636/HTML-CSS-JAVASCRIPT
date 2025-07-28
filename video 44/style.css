@@ -1,41 +1,124 @@
-*{
-    padding: 0;
-    margin: 0;
+body {
+    font-family: 'Segoe UI', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-li{
+
+li,
+img {
     cursor: pointer;
 }
-.container1{
+
+.container1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.container2, .container3{
+
+.container2,
+.container3 {
     display: flex;
     width: 500px;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
-    
+
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-.container3 .Buy{
+.container3 .Buy {
     font-size: large;
     font-weight: bold;
     border: 2px solid black;
-    padding: 12px;
+    border-radius: 3px;
+    padding: 9px;
 }
-.container3 .search{
+
+.container3 .search {
     width: 69px;
     font-size: 17px;
     font-weight: 200;
     padding: 7px;
     border-radius: 50px;
 }
-.container3 .eng{
+
+.container3 .eng {
     font-size: 21px;
 }
-.logo
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    margin: 55px 0px;
+
+}
+
+.initial {
+    font-size: 50px;
+}
+
+.middle {
+    font-size: 25px;
+    width: 58vw;
+    text-align: center;
+}
+
+.first button {
+    border: none;
+    background-color: #00b6d1;
+        padding: 17px 15px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+
+.second {
+    width: 65vw;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.second .initial{
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    height: 173px;
+    background-color: #f9f9f9;
+    
+    
+}
+.item button{
+        border: none;
+    background-color: #5cb85c;
+        padding: 7px 14px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 6px;
+}
+.bold{
+    font-size: 23px;
+    font-weight: bolder;
+}
+.thin{
+    font-size: 14px;
+    font-weight: lighter;
+}

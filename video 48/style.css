@@ -1,0 +1,16 @@
+
+.container{
+    height: 75vh;
+    width: 80vw;
+    background-color: blue;
+
+}
+
+.ball{
+    height: 105px;
+    width: 105px;
+    background-color: red;
+    border-radius: 60000px;
+}
+
+

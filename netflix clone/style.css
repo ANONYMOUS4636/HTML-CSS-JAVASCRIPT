@@ -1,0 +1,119 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: serif;
+}
+
+header{
+    background: url(background.jpg);
+    background-size: max(1280px,100vw);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+}
+
+header .opacity{
+    background-color: rgba(0,0,0,0.69);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+
+}
+
+header nav{
+    height: 10vh;
+}
+
+nav{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    gap: 29px;
+    width: 48vw;
+    margin: auto;
+    text-align: center;
+}
+
+header .textf{
+    color: white;
+}
+
+nav .lang{
+        height: 33px;
+    width: 127px;
+    background: rgb(0 0 0 / 24%);
+    color: white;
+    border-radius: 4px;
+}
+nav ul li button{
+        height: 33px;
+    width: 71px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+
+nav .fweight{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header .fonti{
+        font-size: 62px;
+    font-weight: bolder;
+}
+
+header .fontii{
+        font-size: 23px;
+    font-weight: 700;
+        
+}
+
+header .email{
+    height: 58px;
+    width: 358px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(0 0 0 / 97%);
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 500;
+        border: 1px solid white;
+}
+
+header .getstarted{
+        height: 59px;
+    width: 205px;
+    border: none;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+header .align{
+    display: flex;
+    gap: 16px;
+}
