@@ -57,7 +57,7 @@ header .text {
     text-align: center;
 }
 
-header .textf {
+.textf {
     color: white;
 }
 
@@ -94,7 +94,7 @@ header .fontii {
 
 }
 
-header .email {
+.email {
     height: 58px;
     width: 358px;
     border: none;
@@ -106,7 +106,7 @@ header .email {
     border: 1px solid white;
 }
 
-header .getstarted {
+.getstarted {
     height: 59px;
     width: 205px;
     border: none;
@@ -154,13 +154,14 @@ main section{
     border-radius: 10px;
 }
 
-.timage div span{
+.timage div .forw{
     color: white;
     position: absolute;
     bottom: 0;
     left: -25px;
     font-size: 98px;
     z-index: 2;
+        font-weight: 900;
 }
 
 .sec .join{
@@ -203,4 +204,48 @@ color: white;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px 0px;
+}
+
+.bla{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    font-size: 98px;
+    z-index: 2;
+    font-weight: 700;
+}
+
+.faq{
+    color: white;
+        padding-top: 45px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.faqa{
+    color: white;
+    background-color: rgb(45, 45, 45);
+    
+    
+    height: 68px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 28px;
+    font-size: 22px;
+}
+
+.last{
+    text-align: center;
+    padding: 75px 0px;
+}
+.last .textf{
+    padding-bottom: 15px;
+}
+
+footer{
+    width: 82vw;
+    margin: auto;
 }
