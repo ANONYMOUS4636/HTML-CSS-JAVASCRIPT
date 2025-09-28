@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Powered Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header">
+                <h2>AI Calculator</h2>
+                <div class="theme-switcher">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="display">
+                <div id="ai-suggestion" class="ai-suggestion"></div>
+                <input type="text" id="screen" readonly placeholder="0">
+            </div>
+            <div class="buttons">
+                <button class="btn operator" data-value="AC">AC</button>
+                <button class="btn operator" data-value="DEL">DEL</button>
+                <button class="btn operator" data-value="%">%</button>
+                <button class="btn operator" data-value="/">÷</button>
+                <button class="btn" data-value="7">7</button>
+                <button class="btn" data-value="8">8</button>
+                <button class="btn" data-value="9">9</button>
+                <button class="btn operator" data-value="*">×</button>
+                <button class="btn" data-value="4">4</button>
+                <button class="btn" data-value="5">5</button>
+                <button class="btn" data-value="6">6</button>
+                <button class="btn operator" data-value="-">−</button>
+                <button class="btn" data-value="1">1</button>
+                <button class="btn" data-value="2">2</button>
+                <button class="btn" data-value="3">3</button>
+                <button class="btn operator" data-value="+">+</button>
+                <button class="btn" data-value="0">0</button>
+                <button class="btn" data-value=".">.</button>
+                <button class="btn equal" data-value="=">=</button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="history-container">
+                <h3>Calculation History</h3>
+                <ul id="history-list">
+                    </ul>
+            </div>
+            <div class="ai-features">
+                <h3>AI Smart Features</h3>
+                <p>✨ **Auto-complete:** Type 'pi' or 'e' for their values.</p>
+                <p>🧠 **Smart Suggestions:** Get hints for your next move above the display.</p>
+                <p>✅ **Error Prevention:** Prevents invalid expressions like '5 * + 3'.</p>
+            </div>
+        </div>
+    </div>
+    <script src="c.js"></script>
+</body>
+</html>

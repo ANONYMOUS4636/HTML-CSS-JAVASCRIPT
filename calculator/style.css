@@ -1,0 +1,267 @@
+/* General Styling */
+:root {
+    --bg-color-light: #f7f9fc;
+    --container-bg-light: #ffffff;
+    --text-color-light: #1c1c1e;
+    --btn-bg-light: #f0f0f0;
+    --btn-hover-light: #e0e0e0;
+    --operator-bg-light: #ff9f0a;
+    --operator-text-light: #ffffff;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    --bg-color-dark: #1c1c1e;
+    --container-bg-dark: #2c2c2e;
+    --text-color-dark: #ffffff;
+    --btn-bg-dark: #505054;
+    --btn-hover-dark: #6a6a6e;
+    --operator-bg-dark: #ff9f0a;
+    --operator-text-dark: #ffffff;
+    --shadow-dark: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+body.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 650px;
+}
+
+body.light-mode .container {
+    background-color: var(--container-bg-light);
+    box-shadow: var(--shadow-light);
+}
+
+body.dark-mode .container {
+    background-color: var(--container-bg-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+/* Calculator Styles */
+.calculator {
+    width: 320px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.display {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#screen {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 2.5em;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode #screen {
+    background-color: #eef1f6;
+    color: var(--text-color-light);
+}
+
+body.dark-mode #screen {
+    background-color: #3a3a3c;
+    color: var(--text-color-dark);
+}
+
+.ai-suggestion {
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+body.light-mode .btn {
+    background-color: var(--btn-bg-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode .btn {
+    background-color: var(--btn-bg-dark);
+    color: var(--text-color-dark);
+}
+
+body.light-mode .btn:hover {
+    background-color: var(--btn-hover-light);
+}
+
+body.dark-mode .btn:hover {
+    background-color: var(--btn-hover-dark);
+}
+
+.operator {
+    background-color: var(--operator-bg-light);
+    color: var(--operator-text-light);
+}
+
+body.dark-mode .operator {
+    background-color: var(--operator-bg-dark);
+    color: var(--operator-text-dark);
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: var(--operator-bg-light);
+    color: var(--operator-text-light);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.history-container, .ai-features {
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+body.light-mode .history-container, body.light-mode .ai-features {
+    background-color: #f0f3f7;
+}
+
+body.dark-mode .history-container, body.dark-mode .ai-features {
+    background-color: #3a3a3c;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--operator-bg-light);
+    padding-bottom: 5px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.9em;
+}
+
+body.dark-mode #history-list li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+.ai-features p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+/* Theme Switcher Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--operator-bg-light);
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
