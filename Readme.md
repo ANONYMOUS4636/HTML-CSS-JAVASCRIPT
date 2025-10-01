@@ -11,8 +11,8 @@ I’ll be updating it regularly with what I’ve learned, projects I build, and 
 ### 🔰 Foundations
 - [x] HTML Basics  
 - [x] CSS Styling & Layouts  
-- [ ] JavaScript Fundamentals  
-- [ ] Git & GitHub Basics  
+- [x] JavaScript Fundamentals  
+- [x] Git & GitHub Basics  
 
 ### 💻 Frontend Development
 - [ ] Advanced JavaScript (ES6+)  
