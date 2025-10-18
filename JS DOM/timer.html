@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown to 16 Oct 2025</title>
+</head>
+<body>
+  <h1>Countdown to 16 Oct 2025, 11:59 PM</h1>
+  <p id="countdown"></p>
+
+  <script>
+    // Target date and time (local time zone)
+    const targetDate = new Date("October 16, 2025 23:59:00").getTime();
+
+    const timer = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance <= 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML = "🎉 Time's up!";
+        return;
+      }
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        hours + "h " + minutes + "m " + seconds + "s left";
+    }, 1000);
+  </script>
+</body>
+</html>
