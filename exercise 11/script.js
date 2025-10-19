@@ -6,3 +6,5 @@ function factorial(n){
     }
 }
 
+let a= prompt("enter a number")
+alert(factorial(a))
