@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Event Delegation Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 24px; }
+        .toolbar { margin-bottom: 16px; }
+        .buttons { display:flex; gap:8px; flex-wrap:wrap; }
+        button { padding:8px 12px; border-radius:6px; border:1px solid #444; cursor:pointer; }
+        .info { margin-top:16px; padding:12px; border:1px dashed #888; min-height:40px; }
+        .highlight { outline: 3px solid gold; }
+    </style>
+</head>
+<body>
+    <h1>Event Delegation + closest() Demo</h1>
+
+    <div class="toolbar">
+        <button id="add-btn" data-action="add">Add Button</button>
+        <button id="clear-log" data-action="clear-log">Clear Log</button>
+    </div>
+
+    <div class="buttons" id="button-area">
+        <button data-action="alert" data-label="A">Alert A</button>
+        <button data-action="alert" data-label="B">Alert B</button>
+        <button data-action="toggle" data-label="Toggle">Toggle Highlight</button>
+        <button data-action="remove" data-label="Remove">Remove Me</button>
+    </div>
+
+    <div class="info" id="log">Click any button (including newly added ones) — logs appear here.</div>
+
+    <script src="delegation.js"></script>
+</body>
+</html>
