@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h2>Dynamic Content</h2>
+    <button id="button">Add Element</button>
+    <div class="conta">
+
+    </div>
+    <script>
+        document.querySelector("#button").addEventListener("click", () => {
+            let conta=document.querySelector(".conta");
+            let newbut = document.createElement("button");
+            newbut.textContent = "button added";
+            newbut.style.margin = "20px 0";
+            conta.appendChild(newbut);
+        });
+    </script>
+
+</body>
+
+</html>
