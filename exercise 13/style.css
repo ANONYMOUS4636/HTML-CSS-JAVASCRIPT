@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.duration{
+    background-color: black;
+    color: white;
+    width: 43px;
+}
+.image{
+    position: absolute;
+}
