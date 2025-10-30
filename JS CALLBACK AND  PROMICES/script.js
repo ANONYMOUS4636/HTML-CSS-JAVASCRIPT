@@ -33,3 +33,54 @@ function sayBye() {
 greet("Dattatraya", sayBye);
 
 
+const fn = () => {
+  console.log("Nothing")
+}
+
+const callback = (arg, fn) => {
+    console.log(arg)
+    fn()
+}
+
+const loadScript = (src, callback) => {
+    let sc = document.createElement("script");
+    sc.src = src;
+    sc.onload = callback("Harry", fn);
+    document.head.append(sc)
+}
+
+
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback )
+
+
+
+
+
+function sum(a,b){ //function
+  return (a+b);
+}
+
+function sum1(a,b,sumof){  //callback- means passing a function in another function as argument
+  return sumof(a,b);
+}
+
+
+console.log(sum1(2,3,sum)); //call of the function
+
+
+
+console.log(sum1(2,3,(a,b) => {
+  return (a+b);
+}
+));  // same with arrow function
+
+
+
+//setTimeout is also a require a callback
+const a=() => {
+  console.log('hello');
+  
+}
+
+setTimeout(a,1000);
+
