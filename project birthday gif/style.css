@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Happy Monkey", system-ui;
+    background-color: #a2d2ff;
+    color: #ffffff;
+    text-shadow: 0px 0px 4px black;
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+#img{
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+background-image: url(/github_profile.jpg);
+border-radius: 100%;
+border: 6px solid #EFB0C9;
+}
+
+.bg-cl{
+    background-color:#EFB0C9 ;
+}
+
+.surprise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 83vh;
+    margin-top: 100px;
+}
+
+.gift-img{
+    background-image: url(/4659249.jpg);
+    background-size: cover;
+    background-position: center top;
+    width: 50vw;
+    height: 70vh;
+    border: 8px solid white;
+    border-radius: 5px;
+}
+
+.gif1:hover{
+    background-image: url(/Space\ Science\ Tech\ GIF\ by\ European\ Space\ Agency\ -\ ESA.webp);
+}
+.gif2:hover{
+    background-image: url("/Space\ Stars\ GIF\ by\ SwitchMedia.webp");
+}
+
+.end-page{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer{
+    font-size: 30px;
+}
+
