@@ -16,7 +16,7 @@ I’ll be updating it regularly with what I’ve learned, projects I build, and 
 
 ### 💻 Frontend Development
 - [ ] Advanced JavaScript (ES6+)  
-- [ ] DOM Manipulation & Events  
+- [x] DOM Manipulation & Events  
 - [ ] React.js (Components, Hooks, State Management)  
 - [ ] Responsive Design & Tailwind/Bootstrap  
 
