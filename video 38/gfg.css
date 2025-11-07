@@ -1,0 +1,22 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.container{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    border: 2px solid black;
+
+}
+
+.unique{
+    flex-shrink: 0;
+}

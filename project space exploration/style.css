@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0; 
+}
+
+body{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+.cover{
+    font-family: "Orbitron", sans-serif;
+    background-image: url("/Space\ Stars\ GIF\ by\ SwitchMedia.webp");
+    background-size: cover;
+    color: white;
+    height: 90vh;
+}
+
+.btn{
+    font-family: "Orbitron", sans-serif;
+    padding: 20px 10px;
+    border: none;
+    font-size: 23px;
+    background-color: white;
+}
+
+.head{
+    font-size: 40px;
+    font-weight: bold;
+}
+.cta{
+    text-decoration: underline;
+}
+
+h3{
+    padding: 35px 0;
+
+}
