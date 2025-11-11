@@ -2,6 +2,8 @@ let count=document.querySelector(".count")
 let btn_add=document.querySelector(".btn-add")
 let btn_reset=document.querySelector(".btn-reset")
 let a=1;
+console.log('counter card getting ready...');
+
 btn_add.addEventListener("click",(e)=>{
     console.log(e.target)
     count.innerHTML=a
