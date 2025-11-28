@@ -26,5 +26,9 @@
 // console.log(c)
 
 
-import dattatraya from "./mymodules.js"
-console.log(dattatraya);
+// import dattatraya from "./mymodules.js"
+// console.log(dattatraya);
+
+const a = require("./mymoduless2.js")
+console.log(a);
+
